@@ -8,7 +8,7 @@
 <h1 align="center">📌 Modern-Route-Matrix</h1>
 
 <p align="center">
-  <b>Modern-Route-Matrix</b> is a professional multi-page application architecture designed to showcase advanced routing capabilities in a <b>React 19</b> environment.
+  📌 <b>Modern-Route-Matrix</b> is a professional multi-page application architecture designed to showcase advanced routing capabilities in a <b>React 19</b> environment.
 </p>
 
 <div align="center">
@@ -118,10 +118,10 @@ To clone and run this application, you'll need [Git](https://git-scm.com/), [Nod
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/Umit8098/React-Project-Router.git
+$ git clone https://github.com/umitarat-dev/Modern-Route-Matrix.git
 
 # Navigate into the project folder
-$ cd React-Project-Router
+$ cd Modern-Route-Matrix
 
 # Install dependencies
 $ yarn  
