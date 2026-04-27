@@ -13,18 +13,18 @@
 
 <div align="center">
   <h3>
-    <a href="https://umitarat-dev.github.io/Modern-Route-Matrix/">
+    <a href="https://modern-route-matrix.vercel.app/">
       🖥️ Live Demo
     </a>
      | 
-    <a href="https://github.com/umitarat-dev/Modern-Route-Matrix">
+    <a href="https://github.com/umitarat-dev/Modern-Route-Matrix.git">
       📂 Repository
     </a>
   </h3>
 </div>
 
 <p align="center">
-  <a href="https://umitarat-dev.github.io/VanillaJS-TaskVault/">
+  <a href="https://modern-route-matrix.vercel.app/">
     <img src="./assets/Modern-Route-Matrix.gif" alt="Modern-Route-Matrix" width="700"/>
   </a>
 </p>
