@@ -1,0 +1,77 @@
+import './App.css';
+import Footer from './components/Footer';
+import Nav from './components/Nav';
+import Contact from './pages/Contact';
+import Home from './pages/Home';
+import Instructors from './pages/Instructors';
+// import NotFound from './pages/NotFound';
+import InstructorDetail from './pages/InstructorDetail';
+import Paths from './pages/Paths';
+import FullStack from './pages/FullStack';
+import Aws from './pages/Aws';
+import PrivateRouter from './pages/PrivateRouter';
+import { Navigate } from 'react-router-dom'
+
+// BrowserRouter, Routes, Route import;
+import { Routes, Route } from 'react-router-dom';
+
+//* İç içe sayfaları göstermek icin Nested Route kullanilabilir.
+
+//? Link, NavLink ve Navigate componentleri declerative routing
+//? gerceklestirmek icin kullanilir.
+//? Ornegin: Link ve NavLink Sayfada gorulebilen, kullanciyla
+//? bir etkilesim icerisinde bulunarak yonledirme yapılan bir
+//? componentlerdir. (Nav v.b)
+
+//? Navigate sayfada gorulmeyen ve programsal olarak bir linkin
+//? bir baska linke yonledirmesi icin kullanilir. (v5 -> Redirect)
+
+//* useNavigate() ise imperative routing icin elverislidir.
+//* Ornegin bir fonksiyon,event veye UseEffect icerisinde programsal
+//* olarak yonledirme yapmak icin kullanilabilir.
+
+
+function App() {
+  return (
+    <div>
+
+        <Nav />
+
+        {/* Sadece orta kısmı konteyner içine alıyoruz */}
+        <main className="container"></main>
+      
+        <Routes>
+          
+          <Route path='/' element={<Home />} />
+          <Route path='instructors' element={<Instructors />} />
+          <Route path='instructors/:id' element={<InstructorDetail />} />
+          
+          {/* Nested Route */}
+          <Route path='paths' element={<Paths />}>
+            <Route path='fullstack' element={<FullStack />} />
+            <Route index element={<FullStack />} />
+            <Route path='aws' element={<Aws />} />
+          </Route>
+          
+          {/* Nested Route Erişim kısıtlama */}
+          <Route path="contact" element={<PrivateRouter />}>
+            <Route path="" element={<Contact />} />
+          </Route>
+
+          {/* <Route path='*' element={<NotFound />} /> */}
+          <Route path='*' element={<Navigate to='/' />} />
+
+          {/* <Home />
+          <Instructors />
+          <Contact />
+          <NotFound /> */}
+
+        </Routes>
+      
+        <Footer />
+      
+    </div>
+  );
+}
+
+export default App;
