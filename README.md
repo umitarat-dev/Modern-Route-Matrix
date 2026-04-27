@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/UI-Bootstrap%205-7952B3?style=flat&logo=bootstrap&logoColor=white"/>
 </p>
 
-<h1 align="center">📌 Modern-Route-Matrix</h1>
+<h1 align="center">⚛️ Modern-Route-Matrix</h1>
 
 <p align="center">
   <b>Modern-Route-Matrix</b> is a professional multi-page application architecture designed to showcase advanced routing capabilities in a <b>React 19</b> environment.
